@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <configSections>
+    <section name="MasterCodeGenerator" type="CodeGeneratorUtils.codeGeneratorSettingsSection, CodeGeneratorUtils" />
+    <section name="CPPCodeGenerator" type="CPPCodeGenerator.cppCodeGeneratorSettingsSection, CPPCodeGenerator" />
+    <section name="JavaCodeGenerator" type="JavaCodeGenerator.javaCodeGeneratorSettingsSection, JavaCodeGenerator" />
+    <section name="CSharpCodeGenerator" type="CSharpCodeGenerator.csharpCodeGeneratorSettingsSection, CSharpCodeGenerator" />
+    <section name="masterCodeGeneratorSettings" type="RDPGeneratorConsole.masterCodeGeneratorSettingsSection, RDPGeneratorConsole" />
+  </configSections>
+
+  <startup> 
+    <supportedRuntime version="v4.0" sku=".NETFramework,Version=v4.7.2" />
+  </startup>
+
+  <masterCodeGeneratorSettings>
+    <masterCodeGenerators>
+      <!-- name="element-name" type="namespace.class-name, assembly-name" -->
+      <masterCodeGenerator name="MasterCodeGenerator" type="CodeGeneratorUtils.MasterCodeGenerator, CodeGeneratorUtils" />
+    </masterCodeGenerators>
+  </masterCodeGeneratorSettings>
+   
+  <MasterCodeGenerator>
+    <codeGenerators>
+    </codeGenerators>
+  </MasterCodeGenerator>
+
+  <CPPCodeGenerator>
+    <includeDoxygenComments value="" />
+    <createHeaderFile value="" />
+    <outputInProjectFolder value="YES" />
+    <!-- outputFolderPath is only used if outputInProjectFolder = NO -->
+    <outputFolderPath value="" />
+    <!-- outputFolderName is only used if outputInProjectFolder = YES -->
+    <outputFolderName value="output-cpp" />
+    <outputRDPName value="RDP" />
+  </CPPCodeGenerator>
+
+  <JavaCodeGenerator>
+    <includeDoxygenComments value="" />
+    <outputInProjectFolder value="YES" />
+    <!-- outputFolderPath is only used if outputInProjectFolder = NO -->
+    <outputFolderPath value="" />
+    <!-- outputFolderName is only used if outputInProjectFolder = YES -->
+    <outputFolderName value="output-java" />
+    <outputRDPName value="RDP" />
+    <packageName value="" />
+    <className value="" />
+  </JavaCodeGenerator>
+
+  <CSharpCodeGenerator>
+    <includeDoxygenComments value="" />
+    <outputInProjectFolder value="YES" />
+    <!-- outputFolderPath is only used if outputInProjectFolder = NO -->
+    <outputFolderPath value="" />
+    <!-- outputFolderName is only used if outputInProjectFolder = YES -->
+    <outputFolderName value="output-cs" />
+    <outputRDPName value="RDP" />
+    <namespaceName value="" />
+    <className value="" />
+  </CSharpCodeGenerator>
+</configuration>
