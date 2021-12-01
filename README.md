@@ -12,7 +12,7 @@ The application can also generate detailed reports together with the RDP code, t
 1. Download the program files to your device (either via ZIP or cloning the repository).
 2. Create two folders, "config" and "logs", in the folder containing the downloaded files.
 3. Open a Command Prompt and navigate to the folder.
-4. Enter "RDPGeneratorConsole <path to CFG file>".
+4. Enter "RDPGeneratorConsole [path to CFG file]".
 5. Follow the instructions on the Command Prompt.
 6. If the RDP code is successfully generated, you should see new folders (e.g. "output-cpp", "output-cs", "output-java") appear in the folder. These folders contain the RDP code, as well as the generated reports (if Report Generation is enabled).
 7. If the CFG contains any errors, an error message will be shown on the Command Prompt.
